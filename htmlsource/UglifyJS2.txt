@@ -1,0 +1,31 @@
+﻿https://github.com/mishoo/UglifyJS2
+1. Cài NodeJS
+	npm install uglify-js -g
+	Hoặc cài trực tiếp vào project
+	npm install uglify-js  -- ta chọn cách 2 nha
+	
+2. Giờ ta compile
+	run ../.bin/uglifyjs.cmd
+
+uglifyjs ../hhdRails/app/assets/javascripts/jquery.js \
+			../hhdRails/app/assets/javascripts/jquery-ui.js \
+			../hhdRails/app/assets/javascripts/frontend/jquery-migrate-1.2.1.js \
+			../hhdRails/app/assets/javascripts/frontend/jquery.mousewheel.js \
+			../hhdRails/app/assets/javascripts/frontend/jquery.mobile.customized.min.js \
+			../hhdRails/app/assets/javascripts/frontend/jquery.easing.1.3.js \
+			../hhdRails/app/assets/javascripts/frontend/camera.js \
+			../hhdRails/app/assets/javascripts/frontend/jquery.kwicks.js \
+			../hhdRails/app/assets/javascripts/frontend/video.js \
+			../hhdRails/app/assets/javascripts/frontend/main.js \
+         -o dest/main.min.js \
+         --source-map foo.min.js.map \
+         --source-map-root http://foo.com/src \
+         -p 5 -c -m	
+	ở trên ko thể chạy dc.
+	ok: bạn phải run lệnh dưới đây nha:
+	
+	uglifyjs ../hhdRails/app/assets/javascripts/jquery.js ../hhdRails/app/assets/javascripts/jquery-ui.js ../hhdRails/app/assets/javascripts/frontend/jquery-migrate-1.2.1.js ../hhdRails/app/assets/javascripts/frontend/jquery.mousewheel.js ../hhdRails/app/assets/javascripts/frontend/jquery.mobile.customized.min.js ../hhdRails/app/assets/javascripts/frontend/jquery.easing.1.3.js ../hhdRails/app/assets/javascripts/frontend/camera.js ../hhdRails/app/assets/javascripts/frontend/jquery.kwicks.js ../hhdRails/app/assets/javascripts/frontend/video.js ../hhdRails/app/assets/javascripts/frontend/main.js -o dest/main.js --source-map dest/main.js.map -p 5 -c -m	
+	
+	
+3. bạn tạo file hhdCompile.js (như mẫu - ví dụ để trong thư mục src/)	
+	run node src/hhdCompile.js

@@ -1,0 +1,2766 @@
+@charset "UTF-8";
+/* 
+    Created on : Apr 6, 2014, 4:27:41 PM
+    Author     : LVTD
+    hack: IE8 \0/;    IE9 \9\0;
+*/
+/*genaral*/
+/* 
+    Created on : May 4, 2014, 12:30:45 PM
+    Author     : LVTD
+*/
+@font-face {
+  font-family: 'VNFDaxRegular';
+  src: asset-url("fonts/vnf-dax.eot");
+  src: asset-url("fonts/vnf-dax.eot?#iefix") format("embedded-opentype"), asset-url("fonts/vnf-dax.woff") format("woff"), asset-url("fonts/vnf-dax.ttf") format("truetype"), asset-url("fonts/vnf-dax.svg#VNFDaxRegular") format("svg"); }
+@font-face {
+  font-family: 'UTMFacebookK&TRegular';
+  src: asset-url("fonts/utm-fkt-r.eot");
+  src: asset-url("fonts/utm-fkt-r.eot?#iefix") format("embedded-opentype"), asset-url("fonts/utm-fkt-r.woff") format("woff"), asset-url("fonts/utm-fkt-r.ttf") format("truetype"), asset-url("fonts/utm-fkt-r.svg#UTMFacebookK&TRegular") format("svg"); }
+@font-face {
+  font-family: 'UTMFacebookK&TBold';
+  src: asset-url("fonts/utm-fkt-b.eot");
+  src: asset-url("fonts/utm-fkt-b.eot?#iefix") format("embedded-opentype"), asset-url("fonts/utm-fkt-b.woff") format("woff"), asset-url("fonts/utm-fkt-b.ttf") format("truetype"), asset-url("fonts/utm-fkt-b.svg#UTMFacebookK&TBold") format("svg"); }
+/*grid system*/
+/* 
+    Created on : May 14, 2014, 10:27:42 AM
+    Author     : dailvt
+    Placeholder: l├á nhß╗»ng class tß║ím, sß║╜ ko ─æ╞░ß╗úc bi├¬n dß╗ïch, chß╗ë ─æß╗â @extend
+    
+    D├╣ ─æ├ú cß╗æ gß║»ng, nh╞░ng ko thß╗â thay thß║┐ float bß║▒ng inline-block;
+*/
+.sale .products .ul-wrap ul li .item .img img, .sale .use .main-news img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.footer, .agency, .sale .products .ul-wrap .readmore {
+  clear: both; }
+
+.logo, .footer .copyright, .hotnews, .agency > h1, .agency > p, .sale {
+  margin: 0 2%;
+  width: 96%;
+  position: relative; }
+
+.hotnews, .agency, .sale {
+  padding: 25px 0; }
+
+/*layout*/
+@media (min-width: 769px) {
+  .hotnews .news, .hotnews .video {
+    float: left;
+    width: 50%;
+    position: relative; } }
+
+@media (min-width: 769px) {
+  .sale .products {
+    float: left;
+    width: 70%;
+    position: relative; } }
+
+@media (min-width: 769px) {
+  .sale .use {
+    float: left;
+    width: 30%;
+    position: relative; } }
+
+@media (min-width: 480px) {
+  .sale .products .ul-wrap ul li {
+    float: left;
+    width: 33.33333%;
+    position: relative; } }
+@media (max-width: 480px) {
+  .sale .products .ul-wrap ul li {
+    float: left;
+    width: 50%;
+    position: relative; } }
+
+/*.col-t-33{width: 33.33333333%;}
+@media (min-width: 768px) {
+    .col-70,.col-60,.col-50,.col-40,.col-30,.col-t-33{float:left;}
+    .col-70{width:70%;}
+    .col-60{width: 60%;}
+    .col-50{width: 50%;}
+    .col-40{width: 40%;}
+    .col-30{width:30%;}
+}*/
+/*---*/
+.hotnews .news .listnews ul li a, .agency .hsa-wrap ul.hsa-list li.hsa-item .content .title-item {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.agency .hsa-wrap .hsa-nav .nav-prev, .agency .hsa-wrap .hsa-nav .nav-next {
+  -webkit-transition: all 0.58s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+
+.agency .hsa-wrap .hsa-nav .nav-prev, .agency .hsa-wrap .hsa-nav .nav-next {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  /*Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+  -khtml-user-select: none; }
+
+.agency .hsa-wrap ul.hsa-list li.hsa-item .content .address:before, .agency .hsa-wrap ul.hsa-list li.hsa-item .content .phone-number:before, .agency .hsa-wrap .hsa-nav .nav-prev:before, .agency .hsa-wrap .hsa-nav .nav-next:before, .sale .use .title:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal; }
+
+.hotnews .news .news_top .content .readmore, .hotnews .video .read-other-video, .sale .products .ul-wrap .readmore {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  color: #999;
+  font-size: 0.75em; }
+  .hotnews .news .news_top .content .readmore:hover, .hotnews .video .read-other-video:hover, .sale .products .ul-wrap .readmore:hover {
+    color: #cc5700; }
+
+@font-face {
+  font-family: 'fontello';
+  src: asset-url("fonts/fontello.eot?29354633");
+  src: asset-url("fonts/fontello.eot?29354633#iefix") format("embedded-opentype"), asset-url("fonts/fontello.woff?29354633") format("woff"), asset-url("fonts/fontello.ttf?29354633") format("truetype"), asset-url("fonts/fontello.svg?29354633#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: asset-url('fonts/fontello.svg?29354633#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-emo-happy:before {
+  content: '\e808'; }
+
+/* 'εáê' */
+.icon-move:before {
+  content: '\e871'; }
+
+/* 'εí▒' */
+.icon-emo-wink2:before {
+  content: '\e80a'; }
+
+/* 'εáè' */
+.icon-emo-unhappy:before {
+  content: '\e80b'; }
+
+/* 'εáï' */
+.icon-emo-thumbsup:before {
+  content: '\e80c'; }
+
+/* 'εáî' */
+.icon-emo-coffee:before {
+  content: '\e80d'; }
+
+/* 'εáì' */
+.icon-spin2:before {
+  content: '\e80e'; }
+
+/* 'εáÄ' */
+.icon-search:before {
+  content: '\e807'; }
+
+/* 'εáç' */
+.icon-mail:before {
+  content: '\e806'; }
+
+/* 'εáå' */
+.icon-heart:before {
+  content: '\e802'; }
+
+/* 'εáé' */
+.icon-heart-empty:before {
+  content: '\e803'; }
+
+/* 'εáâ' */
+.icon-star:before {
+  content: '\e804'; }
+
+/* 'εáä' */
+.icon-star-empty:before {
+  content: '\e805'; }
+
+/* 'εáà' */
+.icon-resize-full:before {
+  content: '\e86b'; }
+
+/* 'εí½' */
+.icon-resize-small:before {
+  content: '\e86a'; }
+
+/* 'εí¬' */
+.icon-angle-double-left:before {
+  content: '\e80f'; }
+
+/* 'εáÅ' */
+.icon-angle-double-right:before {
+  content: '\e810'; }
+
+/* 'εáÉ' */
+.icon-angle-double-up:before {
+  content: '\e811'; }
+
+/* 'εáæ' */
+.icon-angle-double-down:before {
+  content: '\e812'; }
+
+/* 'εáÆ' */
+.icon-play:before {
+  content: '\e85c'; }
+
+/* 'εí£' */
+.icon-play-circled:before {
+  content: '\e865'; }
+
+/* 'εíÑ' */
+.icon-stop:before {
+  content: '\e864'; }
+
+/* 'εíñ' */
+.icon-pause:before {
+  content: '\e85b'; }
+
+/* 'εí¢' */
+.icon-to-end:before {
+  content: '\e85d'; }
+
+/* 'εí¥' */
+.icon-to-end-alt:before {
+  content: '\e85e'; }
+
+/* 'εí₧' */
+.icon-to-start:before {
+  content: '\e85f'; }
+
+/* 'εíƒ' */
+.icon-to-start-alt:before {
+  content: '\e860'; }
+
+/* 'εíá' */
+.icon-fast-fw:before {
+  content: '\e861'; }
+
+/* 'εíí' */
+.icon-fast-bw:before {
+  content: '\e862'; }
+
+/* 'εíó' */
+.icon-eject:before {
+  content: '\e863'; }
+
+/* 'εíú' */
+.icon-terminal:before {
+  content: '\e814'; }
+
+/* 'εáö' */
+.icon-xing:before {
+  content: '\e813'; }
+
+/* 'εáô' */
+.icon-mail-1:before {
+  content: '\e81d'; }
+
+/* 'εá¥' */
+.icon-heart-1:before {
+  content: '\e81c'; }
+
+/* 'εá£' */
+.icon-heart-empty-1:before {
+  content: '\e81b'; }
+
+/* 'εá¢' */
+.icon-star-1:before {
+  content: '\e819'; }
+
+/* 'εáÖ' */
+.icon-star-empty-1:before {
+  content: '\e81a'; }
+
+/* 'εáÜ' */
+.icon-down-open-big:before {
+  content: '\e815'; }
+
+/* 'εáò' */
+.icon-left-open-big:before {
+  content: '\e816'; }
+
+/* 'εáû' */
+.icon-right-open-big:before {
+  content: '\e817'; }
+
+/* 'εáù' */
+.icon-up-open-big:before {
+  content: '\e818'; }
+
+/* 'εáÿ' */
+.icon-cd:before {
+  content: '\e869'; }
+
+/* 'εí⌐' */
+.icon-th-outline:before {
+  content: '\e81f'; }
+
+/* 'εáƒ' */
+.icon-th:before {
+  content: '\e820'; }
+
+/* 'εáá' */
+.icon-th-large-outline:before {
+  content: '\e821'; }
+
+/* 'εáí' */
+.icon-th-large:before {
+  content: '\e822'; }
+
+/* 'εáó' */
+.icon-th-list-outline:before {
+  content: '\e81e'; }
+
+/* 'εá₧' */
+.icon-th-list:before {
+  content: '\e800'; }
+
+/* 'εáÇ' */
+.icon-ok-outline:before {
+  content: '\e823'; }
+
+/* 'εáú' */
+.icon-ok:before {
+  content: '\e824'; }
+
+/* 'εáñ' */
+.icon-cancel-outline:before {
+  content: '\e825'; }
+
+/* 'εáÑ' */
+.icon-cancel:before {
+  content: '\e826'; }
+
+/* 'εáª' */
+.icon-plus-outline:before {
+  content: '\e828'; }
+
+/* 'εá¿' */
+.icon-plus:before {
+  content: '\e827'; }
+
+/* 'εáº' */
+.icon-minus-outline:before {
+  content: '\e829'; }
+
+/* 'εá⌐' */
+.icon-minus:before {
+  content: '\e82a'; }
+
+/* 'εá¬' */
+.icon-divide-outline:before {
+  content: '\e82b'; }
+
+/* 'εá½' */
+.icon-divide:before {
+  content: '\e82c'; }
+
+/* 'εá¼' */
+.icon-eq-outline:before {
+  content: '\e82d'; }
+
+/* 'εá¡' */
+.icon-eq:before {
+  content: '\e82e'; }
+
+/* 'εá«' */
+.icon-info-outline:before {
+  content: '\e82f'; }
+
+/* 'εá»' */
+.icon-info:before {
+  content: '\e830'; }
+
+/* 'εá░' */
+.icon-home-outline:before {
+  content: '\e83c'; }
+
+/* 'εá╝' */
+.icon-emo-wink:before {
+  content: '\e809'; }
+
+/* 'εáë' */
+.icon-link-outline:before {
+  content: '\e83a'; }
+
+/* 'εá║' */
+.icon-link:before {
+  content: '\e839'; }
+
+/* 'εá╣' */
+.icon-attach-outline:before {
+  content: '\e838'; }
+
+/* 'εá╕' */
+.icon-attach:before {
+  content: '\e837'; }
+
+/* 'εá╖' */
+.icon-lock:before {
+  content: '\e836'; }
+
+/* 'εá╢' */
+.icon-lock-filled:before {
+  content: '\e831'; }
+
+/* 'εá▒' */
+.icon-lock-open:before {
+  content: '\e832'; }
+
+/* 'εá▓' */
+.icon-lock-open-filled:before {
+  content: '\e833'; }
+
+/* 'εá│' */
+.icon-pin-outline:before {
+  content: '\e834'; }
+
+/* 'εá┤' */
+.icon-pin:before {
+  content: '\e835'; }
+
+/* 'εá╡' */
+.icon-down-outline:before {
+  content: '\e843'; }
+
+/* 'εíâ' */
+.icon-left-outline:before {
+  content: '\e842'; }
+
+/* 'εíé' */
+.icon-right-outline:before {
+  content: '\e844'; }
+
+/* 'εíä' */
+.icon-up-outline:before {
+  content: '\e841'; }
+
+/* 'εíü' */
+.icon-down-small:before {
+  content: '\e83d'; }
+
+/* 'εá╜' */
+.icon-left-small:before {
+  content: '\e83e'; }
+
+/* 'εá╛' */
+.icon-right-small:before {
+  content: '\e83f'; }
+
+/* 'εá┐' */
+.icon-up-small:before {
+  content: '\e840'; }
+
+/* 'εíÇ' */
+.icon-list:before {
+  content: '\e801'; }
+
+/* 'εáü' */
+.icon-volume-off:before {
+  content: '\e868'; }
+
+/* 'εí¿' */
+.icon-volume-down:before {
+  content: '\e867'; }
+
+/* 'εíº' */
+.icon-volume-up:before {
+  content: '\e866'; }
+
+/* 'εíª' */
+.icon-cloud-sun:before {
+  content: '\e84a'; }
+
+/* 'εíè' */
+.icon-cloud-moon:before {
+  content: '\e84b'; }
+
+/* 'εíï' */
+.icon-fog-sun:before {
+  content: '\e84c'; }
+
+/* 'εíî' */
+.icon-windy-rain:before {
+  content: '\e845'; }
+
+/* 'εíà' */
+.icon-snow:before {
+  content: '\e846'; }
+
+/* 'εíå' */
+.icon-snow-alt:before {
+  content: '\e847'; }
+
+/* 'εíç' */
+.icon-snow-heavy:before {
+  content: '\e848'; }
+
+/* 'εíê' */
+.icon-hail:before {
+  content: '\e849'; }
+
+/* 'εíë' */
+.icon-down-open:before {
+  content: '\e876'; }
+
+/* 'εí╢' */
+.icon-left-open:before {
+  content: '\e877'; }
+
+/* 'εí╖' */
+.icon-right-open:before {
+  content: '\e878'; }
+
+/* 'εí╕' */
+.icon-up-open:before {
+  content: '\e879'; }
+
+/* 'εí╣' */
+.icon-down:before {
+  content: '\e87a'; }
+
+/* 'εí║' */
+.icon-left:before {
+  content: '\e87b'; }
+
+/* 'εí╗' */
+.icon-right:before {
+  content: '\e87c'; }
+
+/* 'εí╝' */
+.icon-up:before {
+  content: '\e87d'; }
+
+/* 'εí╜' */
+.icon-call:before {
+  content: '\e875'; }
+
+/* 'εí╡' */
+.icon-facebook:before {
+  content: '\e84d'; }
+
+/* 'εíì' */
+.icon-facebook-rect:before {
+  content: '\e84e'; }
+
+/* 'εíÄ' */
+.icon-twitter:before {
+  content: '\e84f'; }
+
+/* 'εíÅ' */
+.icon-twitter-bird:before {
+  content: '\e850'; }
+
+/* 'εíÉ' */
+.icon-vimeo:before {
+  content: '\e851'; }
+
+/* 'εíæ' */
+.icon-vimeo-rect:before {
+  content: '\e852'; }
+
+/* 'εíÆ' */
+.icon-tumblr:before {
+  content: '\e853'; }
+
+/* 'εíô' */
+.icon-tumblr-rect:before {
+  content: '\e854'; }
+
+/* 'εíö' */
+.icon-googleplus-rect:before {
+  content: '\e855'; }
+
+/* 'εíò' */
+.icon-github-text:before {
+  content: '\e856'; }
+
+/* 'εíû' */
+.icon-skype:before {
+  content: '\e857'; }
+
+/* 'εíù' */
+.icon-icq:before {
+  content: '\e858'; }
+
+/* 'εíÿ' */
+.icon-blogger:before {
+  content: '\e859'; }
+
+/* 'εíÖ' */
+.icon-blogger-rect:before {
+  content: '\e85a'; }
+
+/* 'εíÜ' */
+.icon-cog:before {
+  content: '\e872'; }
+
+/* 'εí▓' */
+.icon-cogs:before {
+  content: '\e873'; }
+
+/* 'εí│' */
+.icon-wrench:before {
+  content: '\e874'; }
+
+/* 'εí┤' */
+.icon-resize-full-1:before {
+  content: '\e86c'; }
+
+/* 'εí¼' */
+.icon-resize-full-alt:before {
+  content: '\e86d'; }
+
+/* 'εí¡' */
+.icon-resize-small-1:before {
+  content: '\e86e'; }
+
+/* 'εí«' */
+.icon-resize-vertical:before {
+  content: '\e86f'; }
+
+/* 'εí»' */
+.icon-resize-horizontal:before {
+  content: '\e870'; }
+
+/* 'εí░' */
+.icon-home:before {
+  content: '\e83b'; }
+
+/* 'εá╗' */
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  max-width: 1400px; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+input, select {
+  vertical-align: middle; }
+
+/*base*/
+/*.header{ 
+    position:relative;
+    margin:auto;width: 98%;
+    text-align:left;
+}*/
+.header, .banner, .agency {
+  width: 100%;
+  position: relative;
+  margin: auto; }
+
+.banner {
+  overflow: hidden;
+  /*background: url(../images/slideshow/khe.jpg)*/ }
+
+.title_red {
+  font-family: "UTMFacebookK&TRegular";
+  font-size: 2.250em;
+  color: #cc5700; }
+
+.footer {
+  border-top: 1px solid #229900;
+  padding: 5px 0; }
+  .footer .copyright {
+    color: #229900;
+    font-size: 0.75em;
+    font-family: "VNFDaxRegular", sans-serif; }
+
+.main_nav {
+  position: relative;
+  font-family: "UTMFacebookK&TBold", sans-serif;
+  font-size: initial;
+  border-top: 1px solid #229900;
+  border-bottom: 1px solid #229900;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+  .main_nav a {
+    display: block; }
+  .main_nav #nav_toggle, .main_nav .nav_toggle {
+    display: none; }
+  @media (min-width: 769px) {
+    .main_nav > ul > .has_child > ul {
+      border-top: 2px solid rgba(255, 255, 255, 0);
+      border-color: #fff; }
+    .main_nav ul {
+      background: #fff;
+      letter-spacing: -0.31em;
+      text-align: left; }
+      .main_nav ul li {
+        display: inline-block;
+        letter-spacing: normal;
+        position: relative;
+        padding: 10px 4%;
+        border-right: 1px solid #229900; }
+        .main_nav ul li a {
+          font-size: 1em;
+          color: #229900;
+          text-transform: uppercase; }
+        .main_nav ul li:hover, .main_nav ul li:focus, .main_nav ul li.active {
+          background: #229900; }
+          .main_nav ul li:hover > a, .main_nav ul li:focus > a, .main_nav ul li.active > a {
+            color: #fff; }
+        .main_nav ul li.has_child ul {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 100%;
+          z-index: 1000;
+          display: none;
+          font-size: initial;
+          background: #229900; }
+          .main_nav ul li.has_child ul li {
+            font-size: 0.875em;
+            width: 92%;
+            padding: 7px 4%; }
+            .main_nav ul li.has_child ul li > a {
+              color: #fff; }
+            .main_nav ul li.has_child ul li.has_child ul {
+              position: absolute;
+              top: 1px;
+              left: 101%;
+              width: 99%; }
+            .main_nav ul li.has_child ul li:hover, .main_nav ul li.has_child ul li:focus, .main_nav ul li.has_child ul li.active {
+              background: #fff; }
+              .main_nav ul li.has_child ul li:hover > a, .main_nav ul li.has_child ul li:focus > a, .main_nav ul li.has_child ul li.active > a {
+                color: #229900; }
+        .main_nav ul li.has_child:hover > ul {
+          display: block; } }
+  @media (min-width: 768px) and (max-width: 960px) {
+    .main_nav ul li {
+      padding: 10px 2.5%; } }
+  @media only screen and (max-width: 768px) {
+    .main_nav {
+      border: none;
+      top: -40px; }
+      .main_nav ul {
+        display: none; }
+        .main_nav ul li {
+          background: #229900;
+          border-top: 1px solid #229900;
+          border-bottom: 1px solid #229900; }
+          .main_nav ul li > a {
+            color: #fff; }
+          .main_nav ul li:hover, .main_nav ul li:focus {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff; }
+            .main_nav ul li:hover > a, .main_nav ul li:focus > a {
+              color: #A9E797; }
+          .main_nav ul li.active {
+            background: #fff;
+            border: 1px solid #229900; }
+            .main_nav ul li.active > a {
+              color: #229900; }
+          .main_nav ul li a {
+            display: block;
+            padding: 8px 4%;
+            text-align: left; }
+          .main_nav ul li.has_child ul {
+            position: relative;
+            width: 99%;
+            z-index: 1000;
+            display: none;
+            border-left: solid #fff;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff; }
+            .main_nav ul li.has_child ul li {
+              width: 100%; }
+              .main_nav ul li.has_child ul li.has_child ul {
+                position: relative;
+                margin-left: 1%;
+                width: 98%; }
+    .main_nav .nav_toggle {
+      display: block;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+      text-align: right; }
+      .main_nav .nav_toggle .nav_toggle_label {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        font-size: 1.725em;
+        color: #229900;
+        text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); }
+        .main_nav .nav_toggle .nav_toggle_label.icon-th-list:before {
+          float: right;
+          line-height: 1.2em;
+          line-height: 0.8em \9\0; }
+        .main_nav .nav_toggle .nav_toggle_label:after {
+          content: 'Danh Mß╗Ñc';
+          display: inline-block;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          text-align: center;
+          margin-right: 5px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+        .main_nav .nav_toggle .nav_toggle_label:hover, .main_nav .nav_toggle .nav_toggle_label.active {
+          opacity: 0.7; }
+      .main_nav .nav_toggle #nav_toggle:checked + .nav_toggle_label:after {
+        content: '─É├│ng'; } }
+  @media only screen and (max-width: 479px) {
+    .main_nav {
+      top: 0; }
+    .main_nav .nav_toggle .nav_toggle_label {
+      width: 100%; } }
+
+/*hack IE 10*/
+@media only screen and (max-width: 768px) {
+  .ie10 .main_nav .nav_toggle .nav_toggle_label.icon-th-list:before {
+    line-height: 0.8em; } }
+/**************************
+*
+*	GENERAL
+* th├¬m pattern - l├á background ─æß║╖t tr├¬n slider.
+* ─æß║╖t ß╗ƒ camera_wrap
+*
+**************************/
+.camera_wrap a, .camera_wrap img,
+.camera_wrap ol, .camera_wrap ul, .camera_wrap li,
+.camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
+.camera_thumbs_wrap a, .camera_thumbs_wrap img,
+.camera_thumbs_wrap ol, .camera_thumbs_wrap ul, .camera_thumbs_wrap li,
+.camera_thumbs_wrap table, .camera_thumbs_wrap tbody, .camera_thumbs_wrap tfoot, .camera_thumbs_wrap thead, .camera_thumbs_wrap tr, .camera_thumbs_wrap th, .camera_thumbs_wrap td {
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  list-style: none; }
+
+.camera_wrap {
+  direction: ltr;
+  display: none;
+  /*float: left;*/
+  position: relative;
+  z-index: 0;
+  max-height: 420px; }
+
+.camera_wrap img {
+  max-width: none !important; }
+
+.camera_fakehover {
+  height: 100%;
+  min-height: 60px;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+
+.camera_wrap {
+  width: 100%; }
+
+.camera_src {
+  display: none; }
+
+.cameraCont, .cameraContents {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+
+.cameraSlide {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+.cameraContent {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+.camera_target {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  z-index: 0; }
+
+.camera_overlayer {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: .1;
+  filter: alpha(opacity=10);
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0; }
+
+.camera_target_content {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+
+.camera_target_content .camera_link {
+  background: asset-url("slideshow/blank.gif");
+  display: block;
+  height: 100%;
+  text-decoration: none; }
+
+.camera_loader {
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin: -18px 0 0 -18px;
+  top: 50%;
+  z-index: 3;
+  color: #fff;
+  font-size: 2em; }
+
+.camera_bar {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3; }
+
+.camera_thumbs_wrap.camera_left .camera_bar, .camera_thumbs_wrap.camera_right .camera_bar {
+  height: 100%;
+  position: absolute;
+  width: auto; }
+
+.camera_thumbs_wrap.camera_bottom .camera_bar, .camera_thumbs_wrap.camera_top .camera_bar {
+  height: auto;
+  position: absolute;
+  width: 100%; }
+
+.camera_nav_cont {
+  height: 65px;
+  overflow: hidden;
+  position: absolute;
+  right: 9px;
+  top: 15px;
+  width: 120px;
+  z-index: 4; }
+
+.camera_caption {
+  display: block;
+  position: absolute;
+  /*    bottom: 0;
+      width: 100%;*/ }
+
+.camera_caption_style1 {
+  top: 10%;
+  left: 5%;
+  width: 70%; }
+
+.camera_caption_style2 {
+  bottom: 10%;
+  right: 10%;
+  width: 50%; }
+
+.camera_caption_style3 {
+  bottom: 5%;
+  left: 2%; }
+
+.camera_caption_style4 {
+  bottom: 5%;
+  right: 8%;
+  width: 80%; }
+
+.camera_caption_style5 {
+  bottom: 9%;
+  right: 2%;
+  width: 90%; }
+
+.camera_caption > div {
+  padding: 10px 20px;
+  line-height: 1.3; }
+
+.camerarelative {
+  overflow: hidden;
+  position: relative; }
+
+.imgFake {
+  cursor: pointer; }
+
+.camera_prevThumbs {
+  bottom: 4px;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  visibility: hidden;
+  width: 30px;
+  z-index: 10; }
+
+.camera_prevThumbs div {
+  background: asset-url("camera_skins.png") no-repeat -160px 0;
+  display: block;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  width: 30px; }
+
+.camera_nextThumbs {
+  bottom: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  visibility: hidden;
+  width: 30px;
+  z-index: 10; }
+
+.camera_nextThumbs div {
+  background: asset-url("camera_skins.png") no-repeat -190px 0;
+  display: block;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  width: 30px; }
+
+.camera_command_wrap .hideNav {
+  display: none; }
+
+.camera_command_wrap {
+  left: 0;
+  position: relative;
+  right: 0;
+  z-index: 4; }
+
+.camera_wrap .camera_pag .camera_pag_ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right; }
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  margin: 20px 5px;
+  position: relative;
+  text-align: left;
+  text-indent: 9999px;
+  width: 16px; }
+
+.camera_commands_emboss .camera_pag .camera_pag_ul li {
+  -moz-box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.camera_wrap .camera_pag .camera_pag_ul li > span {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height: 8px;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  top: 4px;
+  width: 8px; }
+
+.camera_commands_emboss .camera_pag .camera_pag_ul li:hover > span {
+  -moz-box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {
+  -moz-box-shadow: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0; }
+
+.camera_pag_ul li img {
+  display: none;
+  position: absolute; }
+
+.camera_pag_ul .thumb_arrow {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid;
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+  position: absolute; }
+
+.camera_prev, .camera_next, .camera_commands {
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  z-index: 2; }
+
+.camera_prev {
+  left: 0; }
+
+.camera_next {
+  right: 0; }
+
+.camera_prev > span, .camera_next > span {
+  display: block;
+  height: 40px;
+  width: 40px; }
+
+.camera_commands {
+  right: 41px; }
+
+.camera_commands > .camera_play {
+  background: #ccc;
+  height: 40px;
+  width: 40px; }
+
+.camera_commands > .camera_stop {
+  background: #ccc;
+  display: block;
+  height: 40px;
+  width: 40px; }
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  margin: 20px 5px;
+  position: relative;
+  text-indent: 9999px;
+  width: 16px; }
+
+.camera_thumbs_cont {
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.camera_commands_emboss .camera_thumbs_cont {
+  -moz-box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 0px white, inset 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.camera_thumbs_cont > div {
+  float: left;
+  width: 100%; }
+
+.camera_thumbs_cont ul {
+  overflow: hidden;
+  padding: 3px 4px 8px;
+  position: relative;
+  text-align: center; }
+
+.camera_thumbs_cont ul li {
+  display: inline;
+  padding: 0 4px; }
+
+.camera_thumbs_cont ul li > img {
+  border: 1px solid;
+  cursor: pointer;
+  margin-top: 5px;
+  vertical-align: bottom; }
+
+.camera_clear {
+  display: block;
+  clear: both; }
+
+.showIt {
+  display: none; }
+
+.camera_clear {
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: -1px 0 25px;
+  position: relative; }
+
+/**************************
+*
+*	COLORS & SKINS
+*
+**************************/
+.pattern_1 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay1.png") repeat; }
+
+.pattern_2 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay2.png") repeat; }
+
+.pattern_3 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay3.png") repeat; }
+
+.pattern_4 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay4.png") repeat; }
+
+.pattern_5 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay5.png") repeat; }
+
+.pattern_6 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay6.png") repeat; }
+
+.pattern_7 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay7.png") repeat; }
+
+.pattern_8 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay8.png") repeat; }
+
+.pattern_9 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay9.png") repeat; }
+
+.pattern_10 .camera_overlayer {
+  background: asset-url("slideshow/patterns/overlay10.png") repeat; }
+
+.camera_caption {
+  color: #fff; }
+
+.camera_caption > div {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 0.875em; }
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+  background: #EDFAE4;
+  margin: 7px; }
+
+.camera_wrap .camera_pag .camera_pag_ul li:hover > span {
+  background: #9FBB48; }
+
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {
+  background: #698319; }
+
+.camera_pag_ul li img {
+  border: 4px solid #EDFAE4;
+  -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); }
+
+.camera_pag_ul .thumb_arrow {
+  border-top-color: #e6e6e6; }
+
+.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont {
+  font-size: 3.5em;
+  color: #C5D88B; }
+
+.camera_thumbs_cont ul li > img {
+  border-color: 1px solid #000; }
+
+.camera_pag {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  right: 10px; }
+
+.camera_loader, .camera_next > span, .camera_prev > span {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  /*width: 1em;*/
+  /*margin-right: .2em;*/
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  /*margin-left: .2em;*/ }
+
+.camera_loader:before {
+  content: '\e80e'; }
+
+.camera_next > span:before, .camera_prev > span:before {
+  width: 40px;
+  height: 40px; }
+
+.camera_next > span:before {
+  content: '\e817'; }
+
+.camera_prev > span:before {
+  content: '\e816'; }
+
+@media (max-width: 768px) {
+  .camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont {
+    font-size: 2.5em;
+    color: #C5D88B; } }
+@media (max-width: 480px) {
+  .camera_caption {
+    display: none; } }
+/* 
+    Created on : May 14, 2014, 8:28:42 AM
+    Author     : dailvt
+*/
+@media only screen and (min-width: 769px) {
+  .hotnews .news {
+    margin-bottom: 20px; } }
+.hotnews .news .news_top {
+  margin-top: 15px; }
+  .hotnews .news .news_top .images {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #ccc; }
+    .hotnews .news .news_top .images img {
+      margin: 2%;
+      width: 96%;
+      display: block; }
+  .hotnews .news .news_top .content {
+    width: 47%;
+    float: right;
+    color: #555;
+    font-size: initial;
+    overflow: hidden;
+    position: relative; }
+    .hotnews .news .news_top .content .readmore {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background: #fff;
+      line-height: 2; }
+    .hotnews .news .news_top .content .title {
+      font-size: 1.25em;
+      font-family: "VNFDaxRegular", sans-serif;
+      color: #229900;
+      margin: 5px 0; }
+      .hotnews .news .news_top .content .title:hover {
+        color: #cc5700; }
+    .hotnews .news .news_top .content p {
+      font-size: 0.875em;
+      line-height: 1.2;
+      text-align: justify; }
+.hotnews .news .listnews ul {
+  margin-top: 10px; }
+  .hotnews .news .listnews ul li {
+    padding: 2px 0;
+    border-bottom: 1px solid #D5E5D1; }
+    .hotnews .news .listnews ul li a {
+      display: block;
+      font-size: 1.125em;
+      font-family: "VNFDaxRegular", sans-serif;
+      color: #229900;
+      padding: 8px 0; }
+      .hotnews .news .listnews ul li a:hover {
+        color: #cc5700;
+        padding-left: 8px;
+        padding-left: 0 \9\0; }
+.hotnews .video {
+  text-align: center;
+  /*margin:auto;*/ }
+  .hotnews .video .read-other-video {
+    text-align: right;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: .2em; }
+  .hotnews .video .title {
+    font-family: "VNFDaxRegular", sans-serif;
+    font-size: 1.250em;
+    color: #A9DB5D;
+    margin-top: 15px; }
+
+/* 
+    Created on : May 14, 2014, 5:37:22 PM
+    Author     : dailvt
+*/
+.agency {
+  background: #229900 asset-url("bg_abstract.svg") center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 768px) {
+    .agency {
+      margin-top: -40px; } }
+  .agency .title {
+    font-size: 1.375em;
+    letter-spacing: 0.1em;
+    color: #d5e7cf;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "UTMFacebookK&TRegular", sans-serif;
+    text-transform: uppercase; }
+  .agency .hsa_agency {
+    /*margin-top: 20px;*/
+    /*height: 250px;*/ }
+  .agency .hsa-wrap {
+    overflow: hidden;
+    width: 96%;
+    position: relative;
+    margin: 15px auto 0; }
+    .agency .hsa-wrap ul.hsa-list {
+      list-style: none;
+      overflow: hidden;
+      position: relative; }
+      .agency .hsa-wrap ul.hsa-list li.hsa-item {
+        width: 200px;
+        float: left;
+        margin-right: 10px; }
+        .agency .hsa-wrap ul.hsa-list li.hsa-item .images {
+          border: 1px solid #98b68d;
+          height: 135px;
+          overflow: hidden;
+          position: relative; }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .images img {
+            width: 100%; }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .images:after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 5px solid #a9c2a0;
+            border-color: rgba(209, 209, 193, 0.8);
+            width: 188px;
+            height: 125px; }
+        .agency .hsa-wrap ul.hsa-list li.hsa-item .content {
+          margin-top: 7px; }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .content > p {
+            color: #d5e7cf;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 5px 0;
+            font-size: 0.875em; }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .content .title-item {
+            font-size: 1.125em;
+            color: #FCF49F;
+            font-family: "VNFDaxRegular", sans-serif;
+            padding: 5px 0;
+            display: block; }
+            .agency .hsa-wrap ul.hsa-list li.hsa-item .content .title-item:hover {
+              color: #fff;
+              padding-left: 8px;
+              letter-spacing: 0.02em;
+              padding-left: 0 \9\0;
+              letter-spacing: normal \9\0;
+              /*Only works in IE9*/ }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .content .address:before, .agency .hsa-wrap ul.hsa-list li.hsa-item .content .phone-number:before {
+            margin-right: 7px; }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .content .address:before {
+            content: '\e83b'; }
+          .agency .hsa-wrap ul.hsa-list li.hsa-item .content .phone-number:before {
+            content: '\e875'; }
+    .agency .hsa-wrap:hover .hsa-nav .nav-prev, .agency .hsa-wrap:focus .hsa-nav .nav-prev {
+      left: 0; }
+    .agency .hsa-wrap:hover .hsa-nav .nav-next, .agency .hsa-wrap:focus .hsa-nav .nav-next {
+      right: 0; }
+    .agency .hsa-wrap .hsa-nav .nav-prev, .agency .hsa-wrap .hsa-nav .nav-next {
+      position: absolute;
+      top: 0;
+      z-index: 100;
+      display: block;
+      cursor: pointer;
+      width: 35px;
+      height: 100%;
+      font-size: 2em;
+      text-indent: -99999px; }
+      .agency .hsa-wrap .hsa-nav .nav-prev:before, .agency .hsa-wrap .hsa-nav .nav-next:before {
+        position: absolute;
+        top: 42%;
+        text-indent: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        color: #229900;
+        padding: 5px 0; }
+    .agency .hsa-wrap .hsa-nav .nav-prev {
+      background: #8dc17e;
+      background: -moz-linear-gradient(left, #8dc17e 0%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #8dc17e), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(left, #8dc17e 0%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(left, #8dc17e 0%, rgba(255, 255, 255, 0) 100%);
+      background: -ms-linear-gradient(left, #8dc17e 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to right, #8dc17e 0%, rgba(255, 255, 255, 0) 100%);
+      left: -100px; }
+      .agency .hsa-wrap .hsa-nav .nav-prev:before {
+        content: '\e80f'; }
+    .agency .hsa-wrap .hsa-nav .nav-next {
+      background: #8dc17e;
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #8dc17e 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #8dc17e));
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #8dc17e 100%);
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #8dc17e 100%);
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #8dc17e 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #8dc17e 100%);
+      right: -100px; }
+      .agency .hsa-wrap .hsa-nav .nav-next:before {
+        content: '\e810'; }
+
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}*/
+.bottomslider {
+  letter-spacing: -0.31em; }
+
+.bottomslider div {
+  display: inline-block;
+  letter-spacing: normal; }
+
+.left-ct {
+  width: 64%;
+  /*float:left;*/
+  /*height:500px;*/ }
+
+.right-ct {
+  width: 36%;
+  float: right;
+  background: #000;
+  height: 200px; }
+
+@media only screen and (max-width: 479px) {
+  .left-ct, .right-ct {
+    width: 100%;
+    display: block;
+    float: none; } }
+/*!
+ *  Kwicks: Sexy Sliding Panels for jQuery - v2.2.1
+ *  http://devsmash.com/projects/kwicks
+ * ─æ├ú duoc chinh sua
+*/
+.accordion-slider {
+  position: relative;
+  width: 100%; }
+
+/*.accordion-slider large*/
+.kwicks {
+  display: block;
+  list-style-type: none;
+  list-style: none;
+  position: relative;
+  height: 100%; }
+
+.kwicks > * {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0; }
+
+/*dailvt*/
+.kwicks > *:after {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 5px 0px 45px -10px #555555;
+  -moz-box-shadow: inset 5px 0px 45px -10px #555555;
+  box-shadow: inset 5px 0px 45px -10px #555555; }
+
+/*---*/
+.kwicks.kwicks-processed > * {
+  margin: 0;
+  position: absolute;
+  height: 100%; }
+
+.kwicks-horizontal > * {
+  float: left; }
+
+.kwicks-horizontal > :first-child {
+  margin-left: 0; }
+
+.kwicks-vertical > :first-child {
+  margin-top: 0; }
+
+.accordion-slider .slider-caption {
+  /*    width:960px;
+    
+  padding: 2%;*/
+  /*height: 100px;*/
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  /*tam*/
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1; }
+
+/*.accordion-slider .kwicks-collapsed .slider-caption{min-width:450px;}*/
+.accordion-slider .slider-caption h3 {
+  color: #ee0000;
+  font-size: 32px; }
+
+.accordion-slider .slider-caption h3, .accordion-slider .slider-caption p {
+  margin: 5%; }
+
+/*.accordion-slider small*/
+/*d├ánh cho slider nhß╗Å*/
+.accordion-slider .fade-slider {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%; }
+
+.accordion-slider .fade-slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5); }
+
+.accordion-slider .fade-slider li img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -3px;
+  /* I don't understand */ }
+
+.accordion-slider .fade-slider li.show {
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.accordion-slider .fade-slider li .slider-caption {
+  /*position: relative;*/
+  /*display:none;*/
+  bottom: -150%;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+
+.accordion-slider .fade-slider li:hover .slider-caption {
+  /*display:block;*/
+  bottom: 0; }
+
+.accordion-slider .nav-controls {
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-top: 10px; }
+
+.accordion-slider .nav-controls ul > li {
+  display: block;
+  position: static;
+  display: inline-block;
+  cursor: pointer; }
+
+.accordion-slider .nav-controls ul > li > span {
+  background: #bca698;
+  border: 2px solid #bca698;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  outline: 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
+
+.accordion-slider .nav-controls ul > li > span.active {
+  background: #FAFFE4; }
+
+.accordion-slider .nav-direction {
+  position: absolute;
+  z-index: 1000;
+  top: 40%;
+  width: 90%;
+  margin-left: 5%; }
+
+.accordion-slider .nav-direction .nav-prev, .accordion-slider .nav-direction .nav-next {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #05f;
+  cursor: pointer; }
+
+.accordion-slider .nav-direction .nav-next {
+  right: 0; }
+
+.accordion-slider .nav-direction .nav-prev {
+  left: 0; }
+
+/*!
+Video.js Default Styles (http://videojs.com)
+Version 4.6.1
+Create your own skin at http://designer.videojs.com
+*/
+/* SKIN
+================================================================================
+The main class name for all skin-specific styles. To make your own skin,
+replace all occurances of 'vjs-default-skin' with a new name. Then add your new
+skin name to your video tag instead of the default skin.
+e.g. <video class="video-js my-skin-name">
+*/
+.vjs-default-skin {
+  color: #cccccc; }
+
+/*dailvt
+change color: .vjs-default-skin .vjs-play-progress 
+
+*/
+/* Custom Icon Font
+--------------------------------------------------------------------------------
+The control icons are from a custom font. Each icon corresponds to a character
+(e.g. "\e001"). Font icons allow for easy scaling and coloring of icons.
+*/
+/* Base UI Component Classes
+--------------------------------------------------------------------------------
+*/
+/* Slider - used for Volume bar and Seek bar */
+.vjs-default-skin .vjs-slider {
+  /* Replace browser focus hightlight with handle highlight */
+  outline: 0;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  /* background-color-with-alpha */
+  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.9); }
+
+.vjs-default-skin .vjs-slider:focus {
+  /* box-shadow */
+  -webkit-box-shadow: 0 0 2em #ffffff;
+  -moz-box-shadow: 0 0 2em #ffffff;
+  box-shadow: 0 0 2em #ffffff; }
+
+.vjs-default-skin .vjs-slider-handle {
+  position: absolute;
+  /* Needed for IE6 */
+  left: 0;
+  top: 0; }
+
+.vjs-default-skin .vjs-slider-handle:before {
+  content: "\e869";
+  font-family: fontello;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0em 0em 1em #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Rotate the square icon to make a diamond */
+  /* transform */
+  /*    -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);*/ }
+
+/* Control Bar
+--------------------------------------------------------------------------------
+The default control bar that is a container for most of the controls.
+*/
+.vjs-default-skin .vjs-control-bar {
+  /* Start hidden */
+  display: none;
+  position: absolute;
+  /* Place control bar at the bottom of the player box/video.
+     If you want more margin below the control bar, add more height. */
+  bottom: 0;
+  /* Use left/right to stretch to 100% width of player div */
+  left: 0;
+  right: 0;
+  /* Height includes any margin you want above or below control items */
+  height: 3.0em;
+  /* background-color-with-alpha */
+  background-color: #07141e;
+  background-color: rgba(7, 20, 30, 0.7); }
+
+/* Show the control bar only once the video has started playing */
+.vjs-default-skin.vjs-has-started .vjs-control-bar {
+  display: block;
+  /* Visibility needed to make sure things hide in older browsers too. */
+  visibility: visible;
+  opacity: 1;
+  /* transition */
+  -webkit-transition: visibility 0.1s, opacity 0.1s;
+  -moz-transition: visibility 0.1s, opacity 0.1s;
+  -o-transition: visibility 0.1s, opacity 0.1s;
+  transition: visibility 0.1s, opacity 0.1s; }
+
+/* Hide the control bar when the video is playing and the user is inactive  */
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  /* transition */
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  -o-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s; }
+
+.vjs-default-skin.vjs-controls-disabled .vjs-control-bar {
+  display: none; }
+
+.vjs-default-skin.vjs-using-native-controls .vjs-control-bar {
+  display: none; }
+
+/* The control bar shouldn't show after an error */
+.vjs-default-skin.vjs-error .vjs-control-bar {
+  display: none; }
+
+/* IE8 is flakey with fonts, and you have to change the actual content to force
+fonts to show/hide properly.
+  - "\9" IE8 hack didn't work for this
+  - Found in XP IE8 from http://modern.ie. Does not show up in "IE8 mode" in IE9
+*/
+@media \0screen {
+  .vjs-default-skin.vjs-user-inactive.vjs-playing .vjs-control-bar :before {
+    content: ""; } }
+/* General styles for individual controls. */
+.vjs-default-skin .vjs-control {
+  outline: none;
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 3.0em;
+  width: 4em; }
+
+/* FontAwsome button icons */
+.vjs-default-skin .vjs-control:before {
+  font-family: fontello;
+  font-size: 1.5em;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+/* Replacement for focus outline */
+.vjs-default-skin .vjs-control:focus:before,
+.vjs-default-skin .vjs-control:hover:before {
+  text-shadow: 0em 0em 1em #ffffff; }
+
+.vjs-default-skin .vjs-control:focus {
+  /*  outline: 0; */
+  /* keyboard-only users cannot see the focus on several of the UI elements when
+  this is set to 0 */ }
+
+/* Hide control text visually, but have it available for screenreaders */
+.vjs-default-skin .vjs-control-text {
+  /* hide-visually */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Play/Pause
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-play-control {
+  width: 5em;
+  cursor: pointer; }
+
+.vjs-default-skin .vjs-play-control:before {
+  content: "\e85c"; }
+
+.vjs-default-skin.vjs-playing .vjs-play-control:before {
+  content: "\e85b"; }
+
+/* Playback toggle
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-playback-rate .vjs-playback-rate-value {
+  font-size: 1.5em;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+.vjs-default-skin .vjs-playback-rate.vjs-menu-button .vjs-menu .vjs-menu-content {
+  width: 4em;
+  left: -2em;
+  list-style: none; }
+
+/* Volume/Mute
+-------------------------------------------------------------------------------- */
+.vjs-default-skin .vjs-mute-control,
+.vjs-default-skin .vjs-volume-menu-button {
+  cursor: pointer;
+  float: right; }
+
+.vjs-default-skin .vjs-mute-control:before,
+.vjs-default-skin .vjs-volume-menu-button:before {
+  content: "\e006"; }
+
+.vjs-default-skin .vjs-mute-control.vjs-vol-0:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
+  content: "\e003"; }
+
+.vjs-default-skin .vjs-mute-control.vjs-vol-1:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before {
+  content: "\e004"; }
+
+.vjs-default-skin .vjs-mute-control.vjs-vol-2:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before {
+  content: "\e005"; }
+
+.vjs-default-skin .vjs-volume-control {
+  width: 5em;
+  float: right; }
+
+.vjs-default-skin .vjs-volume-bar {
+  width: 5em;
+  height: 0.6em;
+  margin: 1.1em auto 0; }
+
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu-content {
+  height: 2.9em; }
+
+.vjs-default-skin .vjs-volume-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.5em;
+  /* assuming volume starts at 1.0 */
+  width: 100%;
+  background: #1d8100 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat; }
+
+.vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
+  width: 0.5em;
+  height: 0.5em;
+  /* Assumes volume starts at 1.0. If you change the size of the
+     handle relative to the volume bar, you'll need to update this value
+     too. */
+  left: 4.5em; }
+
+.vjs-default-skin .vjs-volume-handle:before {
+  font-size: 0.9em;
+  top: -0.2em;
+  left: -0.2em;
+  width: 1em;
+  height: 1em; }
+
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu .vjs-menu-content {
+  width: 6em;
+  left: -4em; }
+
+/* Progress
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-progress-control {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  font-size: 0.3em;
+  height: 1em;
+  /* Set above the rest of the controls. */
+  top: -1em;
+  /* Shrink the bar slower than it grows. */
+  /* transition */
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+/* On hover, make the progress bar grow to something that's more clickable.
+    This simply changes the overall font for the progress bar, and this
+    updates both the em-based widths and heights, as wells as the icon font */
+.vjs-default-skin:hover .vjs-progress-control {
+  font-size: .9em;
+  /* Even though we're not changing the top/height, we need to include them in
+      the transition so they're handled correctly. */
+  /* transition */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+
+/* Box containing play and load progresses. Also acts as seek scrubber. */
+.vjs-default-skin .vjs-progress-holder {
+  height: 100%; }
+
+/* Progress Bars */
+.vjs-default-skin .vjs-progress-holder .vjs-play-progress,
+.vjs-default-skin .vjs-progress-holder .vjs-load-progress {
+  position: absolute;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* updated by javascript during playback */
+  width: 0;
+  /* Needed for IE6 */
+  left: 0;
+  top: 0; }
+
+.vjs-default-skin .vjs-play-progress {
+  /*
+    Using a data URI to create the white diagonal lines with a transparent
+      background. Surprisingly works in IE8.
+      Created using http://www.patternify.com
+    Changing the first color value will change the bar color.
+    Also using a paralax effect to make the lines move backwards.
+      The -50% left position makes that happen.
+  */
+  background: #1D8100 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat; }
+
+.vjs-default-skin .vjs-load-progress {
+  background: #646464;
+  background: rgba(255, 255, 255, 0.4); }
+
+.vjs-default-skin .vjs-seek-handle {
+  width: 1.5em;
+  height: 100%; }
+
+.vjs-default-skin .vjs-seek-handle:before {
+  padding-top: 0.1em; }
+
+/* Live Mode
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin.vjs-live .vjs-time-controls,
+.vjs-default-skin.vjs-live .vjs-time-divider,
+.vjs-default-skin.vjs-live .vjs-progress-control {
+  display: none; }
+
+.vjs-default-skin.vjs-live .vjs-live-display {
+  display: block; }
+
+/* Live Display
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-live-display {
+  display: none;
+  font-size: 1em;
+  line-height: 3em; }
+
+/* Time Display
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-time-controls {
+  font-size: 1em;
+  /* Align vertically by making the line height the same as the control bar */
+  line-height: 3em; }
+
+.vjs-default-skin .vjs-current-time {
+  float: left; }
+
+.vjs-default-skin .vjs-duration {
+  float: left; }
+
+/* Remaining time is in the HTML, but not included in default design */
+.vjs-default-skin .vjs-remaining-time {
+  display: none;
+  float: left; }
+
+.vjs-time-divider {
+  float: left;
+  line-height: 3em; }
+
+/* Fullscreen
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-fullscreen-control {
+  width: 3.8em;
+  cursor: pointer;
+  float: right; }
+
+.vjs-default-skin .vjs-fullscreen-control:before {
+  content: "\e86b"; }
+
+/* Switch to the exit icon when the player is in fullscreen */
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
+  content: "\e86a"; }
+
+/* Big Play Button (play button at start)
+--------------------------------------------------------------------------------
+Positioning of the play button in the center or other corners can be done more
+easily in the skin designer. http://designer.videojs.com/
+*/
+.vjs-default-skin .vjs-big-play-button {
+  left: 42%;
+  top: 40%;
+  font-size: 2em;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  width: 2.6em;
+  height: 2.6em;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 1;
+  /* Need a slightly gray bg so it can be seen on black backgrounds */
+  /* background-color-with-alpha */
+  background-color: #07141e;
+  background-color: rgba(7, 20, 30, 0.7);
+  border: 0.1em solid #3b4249;
+  /* border-radius */
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  /* box-shadow */
+  -webkit-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+  /* transition */
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+/* Optionally center */
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+  /* Center it horizontally */
+  left: 50%;
+  margin-left: -2.1em;
+  /* Center it vertically */
+  top: 50%;
+  margin-top: -1.4000000000000001em; }
+
+/* Hide if controls are disabled */
+.vjs-default-skin.vjs-controls-disabled .vjs-big-play-button {
+  display: none; }
+
+/* Hide when video starts playing */
+.vjs-default-skin.vjs-has-started .vjs-big-play-button {
+  display: none; }
+
+/* Hide on mobile devices. Remove when we stop using native controls
+    by default on mobile  */
+.vjs-default-skin.vjs-using-native-controls .vjs-big-play-button {
+  display: none; }
+
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus {
+  outline: 0;
+  border-color: #fff;
+  /* IE8 needs a non-glow hover state */
+  background-color: #505050;
+  background-color: rgba(50, 50, 50, 0.75);
+  /* box-shadow */
+  -webkit-box-shadow: 0 0 3em #ffffff;
+  -moz-box-shadow: 0 0 3em #ffffff;
+  box-shadow: 0 0 3em #ffffff;
+  /* transition */
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s; }
+
+.vjs-default-skin .vjs-big-play-button:before {
+  content: "\e85c";
+  font-family: fontello;
+  /* In order to center the play icon vertically we need to set the line height
+     to the same as the button height */
+  line-height: 2.6em;
+  text-shadow: 0.05em 0.05em 0.1em #000;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.vjs-error .vjs-big-play-button {
+  display: none; }
+
+/* Error Display
+--------------------------------------------------------------------------------
+*/
+.vjs-error-display {
+  display: none; }
+
+.vjs-error .vjs-error-display {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.vjs-error .vjs-error-display:before {
+  content: 'X';
+  font-family: Arial;
+  font-size: 4em;
+  color: #666666;
+  /* In order to center the play icon vertically we need to set the line height
+     to the same as the button height */
+  line-height: 1;
+  text-shadow: 0.05em 0.05em 0.1em #000;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  width: 100%; }
+
+.vjs-error-display div {
+  position: absolute;
+  font-size: 1.4em;
+  text-align: center;
+  bottom: 1em;
+  right: 1em;
+  left: 1em; }
+
+.vjs-error-display a,
+.vjs-error-display a:visited {
+  color: #F4A460; }
+
+/* Loading Spinner
+--------------------------------------------------------------------------------
+*/
+.vjs-loading-spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4em;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  margin-left: -0.5em;
+  margin-top: -0.5em;
+  opacity: 0.75;
+  /* animation */
+  -webkit-animation: spin 1.5s infinite linear;
+  -moz-animation: spin 1.5s infinite linear;
+  -o-animation: spin 1.5s infinite linear;
+  animation: spin 1.5s infinite linear; }
+
+/* Errors are unrecoverable without user interaction,
+   so hide the spinner in the case of an error */
+.video-js.vjs-error .vjs-loading-spinner {
+  /* using !important flag because currently the loading spinner
+     uses hide()/show() instead of classes. The !important can be
+     removed when that's updated */
+  display: none !important;
+  /* ensure animation doesn't continue while hidden */
+  /* animation */
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none; }
+
+.vjs-default-skin .vjs-loading-spinner:before {
+  content: "\e85c";
+  font-family: fontello;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  text-shadow: 0em 0em 0.1em #000; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(359deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+/* Menu Buttons (Captions/Subtitles/etc.)
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-menu-button {
+  float: right;
+  cursor: pointer; }
+
+.vjs-default-skin .vjs-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0em;
+  /* (Width of vjs-menu - width of button) / 2 */
+  width: 0em;
+  height: 0em;
+  margin-bottom: 3em;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  border-top: 1.55em solid #000000;
+  /* Same width top as ul bottom */
+  border-top-color: rgba(7, 40, 50, 0.5);
+  /* Same as ul background */ }
+
+/* Button Pop-up Menu */
+.vjs-default-skin .vjs-menu-button .vjs-menu .vjs-menu-content {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 10em;
+  bottom: 1.5em;
+  /* Same bottom as vjs-menu border-top */
+  max-height: 15em;
+  overflow: auto;
+  left: -5em;
+  /* Width of menu - width of button / 2 */
+  /* background-color-with-alpha */
+  background-color: #07141e;
+  background-color: rgba(7, 20, 30, 0.7);
+  /* box-shadow */
+  -webkit-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
+  box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2); }
+
+.vjs-default-skin .vjs-menu-button:hover .vjs-menu {
+  display: block; }
+
+.vjs-default-skin .vjs-menu-button ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0.3em 0 0.3em 0;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: lowercase; }
+
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected {
+  background-color: #000; }
+
+.vjs-default-skin .vjs-menu-button ul li:focus,
+.vjs-default-skin .vjs-menu-button ul li:hover,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:focus,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:hover {
+  outline: 0;
+  color: #111;
+  /* background-color-with-alpha */
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.75);
+  /* box-shadow */
+  -webkit-box-shadow: 0 0 1em #ffffff;
+  -moz-box-shadow: 0 0 1em #ffffff;
+  box-shadow: 0 0 1em #ffffff; }
+
+.vjs-default-skin .vjs-menu-button ul li.vjs-menu-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 2em;
+  padding: 0;
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  cursor: default; }
+
+/* Subtitles Button */
+.vjs-default-skin .vjs-subtitles-button:before {
+  content: "\e00c"; }
+
+/* Captions Button */
+.vjs-default-skin .vjs-captions-button:before {
+  content: "\e008"; }
+
+/* Replacement for focus outline */
+.vjs-default-skin .vjs-captions-button:focus .vjs-control-content:before,
+.vjs-default-skin .vjs-captions-button:hover .vjs-control-content:before {
+  /* box-shadow */
+  -webkit-box-shadow: 0 0 1em #ffffff;
+  -moz-box-shadow: 0 0 1em #ffffff;
+  box-shadow: 0 0 1em #ffffff; }
+
+/*
+REQUIRED STYLES (be careful overriding)
+================================================================================
+When loading the player, the video tag is replaced with a DIV,
+that will hold the video tag or object tag for other playback methods.
+The div contains the video playback element (Flash or HTML5) and controls,
+and sets the width and height of the video.
+
+** If you want to add some kind of border/padding (e.g. a frame), or special
+positioning, use another containing element. Otherwise you risk messing up
+control positioning and full window mode. **
+*/
+.video-js {
+  background-color: #000;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* Start with 10px for base font size so other dimensions can be em based and
+     easily calculable. */
+  font-size: 10px;
+  /* Allow poster to be vertially aligned. */
+  vertical-align: middle;
+  /*  display: table-cell; */
+  /*This works in Safari but not Firefox.*/
+  /* Provide some basic defaults for fonts */
+  font-weight: normal;
+  font-style: normal;
+  /* Avoiding helvetica: issue #376 */
+  font-family: Arial, sans-serif;
+  /* Turn off user selection (text highlighting) by default.
+     The majority of player components will not be text blocks.
+     Text areas will need to turn user selection back on. */
+  /* user-select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+
+/* Playback technology elements expand to the width/height of the containing div
+    <video> or <object> */
+.video-js .vjs-tech {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* Fix for Firefox 9 fullscreen (only if it is enabled). Not needed when
+   checking fullScreenEnabled. */
+.video-js:-moz-full-screen {
+  position: absolute; }
+
+/* Fullscreen Styles */
+body.vjs-full-window {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  /* Fix for IE6 full-window. http://www.cssplay.co.uk/layouts/fixed.html */
+  overflow-y: auto; }
+
+.video-js.vjs-fullscreen {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+  /* IE6 full-window (underscore hack) */
+  _position: absolute; }
+
+.video-js:-webkit-full-screen {
+  width: 100% !important;
+  height: 100% !important; }
+
+.video-js.vjs-fullscreen.vjs-user-inactive {
+  cursor: none; }
+
+/* Poster Styles */
+.vjs-poster {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%; }
+
+.vjs-poster img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  padding: 0;
+  width: 100%; }
+
+/* Hide the poster when native controls are used otherwise it covers them */
+.video-js.vjs-using-native-controls .vjs-poster {
+  display: none; }
+
+/* Text Track Styles */
+/* Overall track holder for both captions and subtitles */
+.video-js .vjs-text-track-display {
+  text-align: center;
+  position: absolute;
+  bottom: 4em;
+  /* Leave padding on left and right */
+  left: 1em;
+  right: 1em; }
+
+/* Move captions down when controls aren't being shown */
+.video-js.vjs-user-inactive.vjs-playing .vjs-text-track-display {
+  bottom: 1em; }
+
+/* Individual tracks */
+.video-js .vjs-text-track {
+  display: none;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 0.1em;
+  /* Transparent black background, or fallback to all black (oldIE) */
+  /* background-color-with-alpha */
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.video-js .vjs-subtitles {
+  color: #ffffff; }
+
+.video-js .vjs-captions {
+  color: #ffcc66; }
+
+.vjs-tt-cue {
+  display: block; }
+
+/* Hide disabled or unsupported controls */
+.vjs-default-skin .vjs-hidden {
+  display: none; }
+
+.vjs-lock-showing {
+  display: block !important;
+  opacity: 1;
+  visibility: visible; }
+
+/*  In IE8 w/ no JavaScript (no HTML5 shim), the video tag doesn't register.
+    The .video-js classname on the video tag also isn't considered.
+    This optional paragraph inside the video tag can provide a message to users
+    about what's required to play video. */
+.vjs-no-js {
+  padding: 20px;
+  color: #ccc;
+  background-color: #333;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  margin: 0px auto; }
+
+.vjs-no-js a,
+.vjs-no-js a:visited {
+  color: #F4A460; }
+
+/* -----------------------------------------------------------------------------
+The original source of this file lives at
+https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
+/*dailvt*/
+@media (min-width: 769px) {
+  .video-wrap {
+    position: absolute;
+    right: 0; } }
+/* 
+    Created on : May 25, 2014, 10:26:39 PM
+    Author     : LVTD
+*/
+.sale {
+  /*@extend %img;*/ }
+  .sale .products .ul-wrap {
+    clear: both; }
+    .sale .products .ul-wrap ul li .item {
+      border: 1px solid #ddd;
+      text-align: center;
+      margin-right: -1px;
+      margin-bottom: -1px; }
+      .sale .products .ul-wrap ul li .item .img {
+        position: relative;
+        padding: 2%; }
+        @media (min-width: 769px) {
+          .sale .products .ul-wrap ul li .item .img {
+            padding: 5%; } }
+        .sale .products .ul-wrap ul li .item .img img {
+          position: relative; }
+      .sale .products .ul-wrap ul li .item .caption {
+        display: none; }
+      .sale .products .ul-wrap ul li .item .content {
+        padding: 0 2% 2% 2%; }
+        @media (min-width: 769px) {
+          .sale .products .ul-wrap ul li .item .content {
+            padding: 0 5% 5% 5%; } }
+        .sale .products .ul-wrap ul li .item .content .name {
+          font-size: 1.25em;
+          font-family: "VNFDaxRegular", sans-serif;
+          color: #229900; }
+        .sale .products .ul-wrap ul li .item .content .price {
+          font-size: 0.875em;
+          font-weight: bold;
+          color: #cc5700; }
+        .sale .products .ul-wrap ul li .item .content .place {
+          font-size: 0.75em;
+          color: #5a5a5a;
+          font-style: italic; }
+        .sale .products .ul-wrap ul li .item .content p {
+          margin: 5px 0; }
+        .sale .products .ul-wrap ul li .item .content span {
+          margin: 0 5px; }
+    .sale .products .ul-wrap .readmore {
+      padding: 11px 0 11px 5px;
+      display: block;
+      font-size: 14px; }
+  .sale .use {
+    overflow: hidden; }
+    @media (max-width: 768px) {
+      .sale .use {
+        margin-top: 20px; } }
+    .sale .use .title {
+      font-family: "UTMFacebookK&TRegular", sans-serif;
+      color: #fff;
+      background: #7BB328;
+      font-size: 1.25em;
+      padding: 10px; }
+      @media (min-width: 769px) {
+        .sale .use .title {
+          margin-left: 2%; } }
+      .sale .use .title:before {
+        content: '\e80a';
+        margin: 0 10px 0 5px; }
+    .sale .use .main-news {
+      padding: 5%;
+      position: relative; }
+      .sale .use .main-news .caption {
+        position: absolute;
+        width: 86%;
+        left: 7%;
+        bottom: 5%;
+        background: rgba(0, 0, 0, 0.5); }
+        .sale .use .main-news .caption a {
+          display: block;
+          padding: 10px 5px;
+          color: #fff;
+          font-size: 1.125em;
+          font-family: "VNFDaxRegular", sans-serif;
+          line-height: 1.5; }
+      @media (max-width: 768px) {
+        .sale .use .main-news {
+          float: left;
+          width: 45%;
+          padding: 3% 0; }
+          .sale .use .main-news .caption {
+            width: 96%;
+            left: 2%;
+            bottom: 7%;
+            background: rgba(0, 0, 0, 0.5); } }
+    .sale .use .listmore {
+      padding: 0 5%; }
+      .sale .use .listmore ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #D5E5D1; }
+        .sale .use .listmore ul li a {
+          font-family: "VNFDaxRegular", sans-serif;
+          color: #229900;
+          text-align: justify; }
+          .sale .use .listmore ul li a:hover {
+            color: #A9E797; }
+      @media (max-width: 768px) {
+        .sale .use .listmore {
+          float: left;
+          width: 50%;
+          position: relative;
+          padding: 3% 0 5% 3%; } }
+
+/* 
+    Created on : May 12, 2014, 4:56:23 PM
+    Author     : dailvt
+*/
+
+/*# sourceMappingURL=style.css.map */

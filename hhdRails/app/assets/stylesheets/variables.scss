@@ -1,0 +1,37 @@
+/* 
+    Created on : May 4, 2014, 12:30:45 PM
+    Author     : LVTD
+*/
+
+@font-face {
+    font-family: 'VNFDaxRegular';
+    src: asset-url('fonts/vnf-dax.eot');
+    src: asset-url('fonts/vnf-dax.eot?#iefix') format('embedded-opentype'),
+         asset-url('fonts/vnf-dax.woff') format('woff'),
+         asset-url('fonts/vnf-dax.ttf') format('truetype'),
+         asset-url('fonts/vnf-dax.svg#VNFDaxRegular') format('svg');
+}
+@font-face {
+    font-family: 'UTMFacebookK&TRegular';
+    src: asset-url('fonts/utm-fkt-r.eot');
+    src: asset-url('fonts/utm-fkt-r.eot?#iefix') format('embedded-opentype'),
+         asset-url('fonts/utm-fkt-r.woff') format('woff'),
+         asset-url('fonts/utm-fkt-r.ttf') format('truetype'),
+         asset-url('fonts/utm-fkt-r.svg#UTMFacebookK&TRegular') format('svg');
+}
+@font-face {
+    font-family: 'UTMFacebookK&TBold';
+    src: asset-url('fonts/utm-fkt-b.eot');
+    src: asset-url('fonts/utm-fkt-b.eot?#iefix') format('embedded-opentype'),
+         asset-url('fonts/utm-fkt-b.woff') format('woff'),
+         asset-url('fonts/utm-fkt-b.ttf') format('truetype'),
+         asset-url('fonts/utm-fkt-b.svg#UTMFacebookK&TBold') format('svg');
+}
+$green-standard: #229900;//#6fa112
+$green-standard-hover: #A9E797;
+$red-standard: #cc5700;
+$border-line: 1px solid $green-standard;
+
+$font-style1-regular: 'UTMFacebookK&TRegular';
+$font-style1-bold: 'UTMFacebookK&TBold';
+$font-style2:'VNFDaxRegular';

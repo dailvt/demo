@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HhdRails</title>
+  <%= stylesheet_link_tag  'application', media: 'all'  %>
+	<%= csrf_meta_tags %>
+	<%= javascript_include_tag 'application' %>
+	<!--[if lt IE 9]>
+    <%= stylesheet_link_tag  'fixIE8', media: 'all'  %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2pre/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+  <![endif]-->
+	<noscript>
+     <%= stylesheet_link_tag  'noscript', media: 'all'  %>
+    </noscript>
+</head>
+<body>
+<%= render "layouts/partials/header" %>
+<%= yield %>
+<%= render "layouts/partials/footer" %>
+
+<script>
+    (function() {
+        var els = ['section', 'article', 'hgroup', 'header', 'footer', 'nav', 'aside',
+            'figure', 'mark', 'time', 'ruby', 'rt', 'rp'];
+        for (var i = 0; i < els.length; i++) {
+            document.createElement(els[i]);
+        }
+    })();
+    //slider khác ko dc có hàm dưới đây
+    $(window).load(function() {
+        jQuery('#banner_slideshow').camera({
+            thumbnails: true,
+            loader: 'none',
+            playPause: false
+        });
+    });
+</script>
+<!--[if !IE]><!--><script>if (/*@cc_on!@*/false) {
+        document.documentElement.className += ' ie10';
+    }</script><!--<![endif]-->
+
+</body>
+</html>
